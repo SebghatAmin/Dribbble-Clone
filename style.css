@@ -61,7 +61,9 @@ h6 {
 #__next {
   isolation: isolate;
 }
-
+.Pop-up-list {
+  padding: 5px;
+}
 .nav-v2-burger {
   display: grid;
   box-sizing: content-box;
@@ -182,16 +184,18 @@ li:hover {
 .sub-middle-list-1 {
   display: none;
   height: 150px;
+  width: 250px;
   visibility: hidden;
   position: absolute;
   opacity: 0;
   list-style-type: none;
   background: #fff;
-  padding: 32px;
+  padding: 20px;
   flex-direction: column;
   transition: visibility 5s ease-out all;
   border: 1px solid #f3f3f4;
   border-radius: 16px;
+  gap: 10px;
   top: 100%;
   box-shadow: 0px 0px 0px 0px rgba(13, 12, 34, 0.02),
     0px 18px 39px 0px rgba(13, 12, 34, 0.02),
@@ -201,14 +205,12 @@ li:hover {
     0px 442px 124px 0px rgba(13, 12, 34, 0);
 }
 .sub-middle-list-1 li {
-  display: flex;
-  flex-direction: column;
   padding: 0 !important;
-  color: #0d0c22;
+  color: hsl(243, 48%, 9%);
   font-size: 15px;
   font-weight: 500;
-  /* gap: 40px; */
-  /* line-height: 1; */
+  gap: 40px;
+  line-height: 1;
 }
 .sub-middle-list-1 span {
   color: #3d3d4e;
@@ -273,12 +275,21 @@ ul {
   background-color: #f8f7f4;
   max-width: 800px;
   align-items: center;
+  gap: 10px;
 }
 .title {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 75%;
+  max-width: 100%;
+  /* background-color: green; */
+  text-align: center;
+}
+.title-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 70%;
   /* background-color: green; */
   text-align: center;
 }
@@ -291,16 +302,15 @@ ul {
   letter-spacing: -1px;
   line-height: 1.25;
   text-align: center;
+  white-space: wrap;
 }
-.title h2 {
+.title-2 h2 {
   font-size: 16px;
-  margin: 24px 150px;
   color: #3d3d4e;
   font-weight: 400;
   line-height: 28px;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+  white-space: wrap;
 }
 
 .search-shots {
@@ -846,9 +856,6 @@ span:hover {
   .footer-two {
     flex-direction: row;
   }
-  .footer-one {
-    flex-direction: row;
-  }
   .middle-part {
     display: none;
   }
@@ -913,6 +920,7 @@ span:hover {
 
   .footer-one {
     flex-direction: row;
+    gap: 0;
   }
   /* .nav-v2-burger {
     display: flex;
